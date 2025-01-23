@@ -4,9 +4,13 @@ import Login from './components/Login';
 import SignUp from './components/SignUp';
 import Prompt from './components/Prompt';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-
+import ITFields from './components/ITFields';
+import Universities from './components/Universities';
+import  ITCourses from './components/ITCourses';
+import { ChatProvider } from "./context/Context";
 function App() {
   return (
+    <ChatProvider>
     <BrowserRouter>
       <Routes>
   
@@ -14,8 +18,12 @@ function App() {
         <Route path="/chat" element={<Chat />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<SignUp />} />
+        <Route path="/itfields" element={<ITFields />} />
+        <Route path="/universities" element={<Universities/>} />
+        <Route path="/itcourses" element={<ITCourses/>} />
       </Routes>
     </BrowserRouter>
+    </ChatProvider>
   );
 }
 
