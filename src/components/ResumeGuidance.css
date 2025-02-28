@@ -1,0 +1,113 @@
+/* General Styling
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: rgb(3, 0, 31);
+  color: white;
+  padding: 20px;
+} */
+
+/* Heading */
+.resume-heading {
+  font-size: 32px;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 30px;
+  padding-top: 30px;
+  color: white;
+}
+
+/* ATS Explanation */
+.ats-section {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.ats-section {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #d3d3d3;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.ats-section h2 {
+  font-size: 24px;
+  color:  #222;
+}
+
+.ats-section p {
+  font-size: 16px;
+  color: #555;
+}
+
+/* Ats Resume Image example */
+.ats-example h2 {
+  font-size: 24px;
+  color:  #fff;
+}
+
+.ats-example {
+  margin-top: 20px;
+  padding: 20px;
+  background-color:rgb(6, 2, 44);
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* ATS Tools Container */
+.ats-tools-container {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: rgb(6, 2, 44);
+  border-radius: 10px;
+  text-align: center;
+}
+
+.ats-tools-container h2 {
+  font-size: 24px;
+  color: #fff;
+}
+
+
+
+.ats-tools-container p {
+  font-size: 16px;
+  color: #d1d1e0;
+}
+
+/* ATS Tools Grid */
+.ats-tools-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin-top: 20px;
+}
+
+/* ATS Tool Item */
+.ats-tool-item {
+  background-color:   #d3d3d3;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  transition: 0.3s ease-in-out;
+}
+
+.ats-tool-item:hover {
+  background-color: rgb(3, 0, 31) ;
+}
+
+.ats-tool-item a {
+  color: #4facfe;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.ats-tool-item a:hover {
+  text-decoration: underline;
+}
+
+.tool-icon {
+  font-size: 24px;
+  display: block;
+  margin-bottom: 5px;
+}

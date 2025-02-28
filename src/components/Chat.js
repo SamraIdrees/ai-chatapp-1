@@ -7,7 +7,7 @@ import saved from "../assets/bookmark.svg";
 import rocket from "../assets/rocket.svg";
 import sendBtn from "../assets/send.svg";
 import userIcon from "../assets/user-icon.png";
-import gptImgLogo from "../assets/chatgptLogo.svg";
+import Career from "../assets/Career.png";
 import { Link } from "react-router-dom";
 import { ChatContext } from "../context/Context";
 import { GEMINI_API_URL, GEMINI_API_KEY } from "../config/gemini";
@@ -44,7 +44,7 @@ const Chat = () => {
       console.error("Error fetching recommendations:", error);
       addChat("bot", "An error occurred. Please try again later.");
     }
-
+  
     setInput(""); // Clear input field
   };
 
@@ -53,7 +53,7 @@ const Chat = () => {
       <div className="sideBar">
         <div className="upperSide">
           <div className="upperSideTop">
-            <img src={gptLogo} alt="" className="logo" />
+            <img src={Career} alt="" className="logo" />
             <span className="brand">CareerIT</span>
           </div>
           <button className="midBtn">
@@ -87,14 +87,16 @@ const Chat = () => {
             <img src={rocket} alt="Rocket" className="listItemsImg" />
             Universities
           </Link>
+          
           <Link to="/itcourses" className="listItems">
             <img src={rocket} alt="Rocket" className="listItemsImg" />
             IT Courses
           </Link>
-          <div className="listItems">
+          <Link to="/resumeguidance" className="listItems">
             <img src={rocket} alt="Rocket" className="listItemsImg" />
-            Resume Guidance
-          </div>
+            ResumeGuidance
+          </Link>
+         
         </div>
       </div>
       <div className="main">
@@ -103,7 +105,7 @@ const Chat = () => {
             <div className={`chat ${chat.sender === "bot" ? "bot" : ""}`} key={index}>
               <img
                 className="chatImg"
-                src={chat.sender === "bot" ? gptImgLogo : userIcon}
+                src={chat.sender === "bot" ? Career : userIcon}
                 alt=""
               />
               <p className="txt">{chat.message}</p>

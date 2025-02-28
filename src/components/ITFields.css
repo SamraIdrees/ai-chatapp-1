@@ -1,111 +1,124 @@
 /* Main Container */
 .it-container {
-    min-height: 100vh;
-    background-color:rgba(28, 30, 58, 1);
-    padding: 40px 0;
-    text-align: center;
-  }
+  min-height: 100vh;
+  background-color:rgba(28, 30, 58, 1);
+  padding: 40px 0;
+  text-align: center;
+}
+
+/* Title */
+.it-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 20px;
+}
+.it-category {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.it-category-heading {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #ccc;
+  display: inline-block;
+  padding-bottom: 5px;
+  color: #fff;
+}
+/* Search Bar */
+.it-search-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.it-search-input {
+  width: 50%;
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+  background: #d3d3d3;
+}
+
+.it-search-input:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 2px 2px 8px rgba(0, 123, 255, 0.3);
+}
+
+/* Cards Grid */
+.it-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Individual Card */
+.it-card {
+  background: #d3d3d3;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.it-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
   
-  /* Title */
-  .it-title {
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: #fff;
-    margin-bottom: 20px;
-  }
   
-  /* Search Bar */
-  .it-search-container {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-  }
+}
+
+/* Icon */
+.it-icon {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+/* Card Title */
+.it-card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Card Description */
+.it-card-description {
+  font-size: 1.5rem;
+  color: #666;
+  margin: 10px 20px;
   
-  .it-search-input {
-    width: 50%;
-    padding: 10px;
-    border: 2px solid #ddd;
-    border-radius: 8px;
-    font-size: 16px;
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
-    transition: 0.3s;
-    background: #d3d3d3;
-  }
-  
-  .it-search-input:focus {
-    outline: none;
-    border-color: #007bff;
-    box-shadow: 2px 2px 8px rgba(0, 123, 255, 0.3);
-  }
-  
-  /* Cards Grid */
-  .it-cards-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 20px;
-    padding: 20px;
-    max-width: 1200px;
-    margin: auto;
-  }
-  
-  /* Individual Card */
-  .it-card {
-    background: #d3d3d3;
-    border-radius: 12px;
-    padding: 20px;
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .it-card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
-    
-    
-  }
-  
-  /* Icon */
-  .it-icon {
-    font-size: 3rem;
-    margin-bottom: 10px;
-  }
-  
-  /* Card Title */
-  .it-card-title {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #333;
-  }
-  
-  /* Card Description */
-  .it-card-description {
-    font-size: 1.5rem;
-    color: #666;
-    margin: 10px 20px;
-    
-  }
-  
-  /* Learn More Button */
-  .it-learn-more {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    font-size: 14px;
-    border-radius: 20px;
-    text-decoration: none;
-    transition: 0.3s;
-  }
-  
-  .it-learn-more:hover {
-    background-color: #0056b3;
-  }
-  
-  /* No Results Message */
-  .it-no-results {
-    font-size: 1.2rem;
-    color: #777;
-    margin-top: 20px;
-  }
+}
+
+/* Learn More Button */
+.it-learn-more {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  font-size: 14px;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.it-learn-more:hover {
+  background-color: #0056b3;
+}
+
+/* No Results Message */
+.it-no-results {
+  font-size: 1.2rem;
+  color: #fff;
+  margin-top: 20px;
+}
