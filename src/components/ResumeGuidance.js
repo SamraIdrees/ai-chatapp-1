@@ -2,7 +2,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { FaChevronDown, FaChevronUp, FaUserCircle, FaPen, FaListUl, FaUniversity, FaLaptopCode, FaBook, FaExternalLinkAlt } from "react-icons/fa";
 import "./ResumeGuidance.css";
-
+import {Link} from "react-router-dom" ;
 const ResumeGuidance = () => {
   const [openSection, setOpenSection] = useState(null);
 
@@ -60,44 +60,15 @@ const ResumeGuidance = () => {
       {/* ATS Explanation */}
       <section className="ats-example">
         <h2> ATS-Friendly Resume</h2>
-        {/* <p>
-          Many companies use Applicant Tracking Systems (ATS) to filter resumes before hiring managers see them.<br></br>
-          Ensure your resume has proper formatting and keywords to pass ATS scans.
-        </p> */}
+        
+        <Link to="../assets/Demo_Resume.pdf" download>
+  <button>Download Resume</button>
+</Link>
+
       </section>
 
-      {/* Full Resume Example
-      <section className="full-resume">
-        <h2>Full Resume Example</h2>
-        <pre className="full-resume-text">
-          {`John Doe
-+123 456 7890
-john.doe@email.com
-linkedin.com/in/johndoe
-
-Summary:
-Frontend Developer with 3+ years of experience.
-
-Skills:
-HTML, CSS, JavaScript, React, UX/UI Design
-
-Experience:
-Frontend Developer | XYZ Corp | 2021 - Present
-- Developed responsive web interfaces.
-- Collaborated with designers to improve UI/UX.
-
-Education:
-BSc in Computer Science, University of XYZ, 2021
-Certification: Full Stack Web Developer (Udemy)
-
-Projects:
-Portfolio Website - GitHub: github.com/johndoe/portfolio
-
-Courses:
-JavaScript Essentials (Udemy) - March 2022
-Advanced CSS (Coursera) - June 2021`}
-        </pre>
-      </section> */}
+    
+     
 
       {/* Tools for ATS-Friendly Resume */}
       <section className="ats-tools-container">

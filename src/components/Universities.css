@@ -119,3 +119,38 @@ display: inline-block;
 .flip-card-back a:hover {
   text-decoration: underline;
 }
+
+
+/* Responsive Design for Tablets (2 columns) */
+@media (max-width: 1024px) {
+  .university-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+  }
+
+  .search-bar {
+    width: 80%; /* Make search bar wider on smaller screens */
+  }
+}
+
+/* Responsive Design for Mobile (1 column) */
+@media (max-width: 768px) {
+  .university-container {
+    grid-template-columns: 1fr; /* 1 card per row */
+  }
+
+  .search-bar {
+    width: 90%; /* Further increase width for better UX */
+  }
+
+  header h2 {
+    font-size: 28px;
+  }
+
+  header p {
+    font-size: 16px;
+  }
+
+  .province-heading {
+    font-size: 20px;
+  }
+}
